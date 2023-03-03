@@ -116,15 +116,37 @@ nav ul a svg {
 .about-me .container {
     width: 50%;
     padding-right: 50px;
+
 }
 
 .about-me .img-container {
     width: 50%;
+    text-align: center;
+    position: relative;
+
 }
 
 .about-me .img-container img {
-    width: 100%;
+    width: 80%;
+    text-align: center;
+    position: relative;
 
+
+}
+
+.about-me .img-container .line {
+    width: calc(70% + 50px);
+    height: calc(90% + 50px);
+    border: 1px solid var(--purple);
+
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 70%/2 - 15px);
+}
+
+.about-me .img-container .line.green {
+    transform: rotate(-3.3deg);
+    color: var(--green);
 }
 
 /* Responsividade */
@@ -179,6 +201,10 @@ nav ul a svg {
     }
 
     nav {
+        position: fixed;
+        width: 100%;  
+        bottom: 0;
+        top: unset;
         padding: 0 15px;
     }
 
