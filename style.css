@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 :root {
     --purple: #5280E2;
     --green:  #15CDCB;
@@ -171,8 +173,8 @@ nav ul a svg {
 
 .services {
     text-align: center;
-    margin: 100px 0;
-    padding: 0 150px;
+    margin: 150px 0;
+    padding: 0 100px;
 
 }
 
@@ -180,7 +182,7 @@ nav ul a svg {
     display: flex;
     justify-content:space-between;
     max-width: 1200px;
-    margin: 30px auto 0px 100px ;
+    margin: 60px auto 0 ;
 }
 
 .services .services-container .service-card {
@@ -200,6 +202,7 @@ nav ul a svg {
 .services .services-container .service-card img {
     margin-bottom: 40px;
     width: 90px;
+    
 
 }
 
@@ -224,8 +227,9 @@ nav ul a svg {
     box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(42px);
     border: 1px solid white;
+
     border-radius: 16px;
-    max-width: 450px;
+    max-width: 360px;
     text-align: left;
     padding: 50px 25px;
 
@@ -234,10 +238,12 @@ nav ul a svg {
 .portfolio .portfolio-container .portfolio-card .img-container {
     margin: 0 25px 50px;
     position: relative;
+    cursor: pointer;
 }
 
 .portfolio .portfolio-container .portfolio-card .img-container img {
     width: 100%;
+    
 }
 
 .portfolio-container .portfolio-card .img-container .line {
@@ -369,7 +375,7 @@ footer {
     }
 
     .about-me .img-container {
-        margin: 40px 0;
+        margin: 70px 0;
     }
 
     .services, .portfolio {
