@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <body>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css" />
 </head>
 <body>
     <header>
@@ -70,9 +71,12 @@
     </section>
     <section>
         <section id="portfolio" class="portfolio">
-            <h1 class="title-green">Portfólio</h1>
+            <h1 class="title-green">Portfólio</h1>  
+
+            <div class="owl-carousel owl-theme">
             <div class="portfolio-container">
                 <div class="portfolio-card">
+                    
                     <a href="https://github.com/LeandroMCF/Projeto-Instadev"> <div class="img-container">
                         <div class="line green"></div>
                         <a href="https://github.com/LeandroMCF/Projeto-Instadev"><img src="assets/instadev.png" alt="Imagem do portfolio"></a>
@@ -90,10 +94,19 @@
                         Um dos meus primeiros projetos em Equipe no SENAI, onde fizemos nosso propria rede social InstaDEV
                     </p>
                 </div>
+            </div>
+
+                <div class="owl-carousel owl-theme">
+
+                <div class="portfolio-container">
                 <div class="portfolio-card">
+                   
                     <a href="https://diomids2.github.io/HDEsteticCenter/"> <div class="img-container">
                         <div class="line green"></div>
-                        <img src="assets/hdesteticcenter.png" alt="Imagem do portfolio"></a>
+                        <img class="item">
+                        <img src="assets/hdesteticcenter.png" alt="Imagem do portfolio">
+                    
+                    </a>
                     </div>
                     <div class="language-container">
                         <ul>
@@ -108,10 +121,16 @@
                         um site estilo ladding page para uma Nail Designer, tambem com um pequeno sistema de loja dentro dele, onde futuramente será uma ecommerce 100%
                     </p>
                 </div>
+            </div>
+            </div>
+            <div class="owl-carousel owl-theme">  <!-- Carrocel -->
+                <div class="portfolio-container">
                 <div class="portfolio-card">
                     <a href="https://diomids2.github.io/CamilaRockabilly/"> <div class="img-container">
                         <div class="line green"></div>
-                        <img src="assets/camilasite.png" alt="Imagem do portfolio"></a>
+                        <img src="assets/camilasite.png" alt="Imagem do portfolio">
+                    
+                    </a>
                     </div>
                     <div class="language-container">
                         <ul>
@@ -128,7 +147,32 @@
                     </p>
                 </div>
             </div>
-            
+        </div>
+             
+        
+            <div class="owl-carousel owl-theme">
+                <div class="portfolio-container">
+                    <div class="portfolio-card">
+                        
+                        <a href="https://github.com/LeandroMCF/Projeto-Instadev"> <div class="img-container">
+                            <div class="line green"></div>
+                            <a href="https://github.com/LeandroMCF/Projeto-Instadev"><img src="assets/eu.png" alt="Imagem do portfolio"></a>
+                        </div>
+                        <div class="language-container">
+                            <ul>
+                                <li>html</li>
+                                <li>C#</li>
+                                <li>css</li>
+                                <li>js</li>
+                            </ul>
+                        </div>
+                        <p><b>Restaurante</b></p>
+                        <p>
+                            Um sistema para pedidos de Fast Food (em construção)
+                        </p>
+                    </div>
+                </div>
+            </div>
             
         </section>
 
@@ -168,9 +212,28 @@
         </section>
         <footer>Made by Claudiomir Neves - 2023</footer>
 
-    <script>
-        feather.replace()
+
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="dist/owl.carousel.js"></script>
+    <script src="dist/owl.carousel.min.js"></script>
+
+    <script type="text/javascript">
+        var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
 
     </script>
 </body>
+
 </html>
